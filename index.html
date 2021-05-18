@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>magwai-test</title>
+
+<!--*FAVICON*-->
+<link rel="shortcut icon" href="img/favicon.png"><!-- .ico, .png, .svg, .WebP -->
+
+<!--*JAVA SCRIPT*-->
+
+<!--*JAVA SCRIPT FRAMEWORKS*-->
+<!--VUEjs-->
+<script src="libs/Vue/vue.min.js"></script>
+
+<!--*JAVA SCRIPT CAROUSEL*-->
+<link rel="stylesheet" href="libs/SwiperJS/swiper-bundle.min.css">
+<script src="libs/SwiperJS/swiper-bundle.min.js"></script>
+
+<!--*JAVA SCRIPT MODALS/POPUPS*-->
+<script src="libs/digitalize-phoneinput/phoneinput.js"></script>
+
+<!--*CSS*-->
+<!--main styles-->
+<link href="css/main.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="site" id="app">
+
+
+    <header class="site-header">
+
+  <div class="site-header__content u-container">
+
+    <div class="site-header__mainbar">
+
+      <button class="c-btn c-btn--hamburger" id="menu-trigger">
+        <span class="c-btn__icon c-btn__icon--open">
+          <svg class="e-icon" height="38" width="38" viewBox="0 0 24 24">
+            <use xlink:href="/img/icons/gg-menu-right.svg#icon-menu"></use>
+          </svg>
+        </span>
+        <span class="c-btn__icon c-btn__icon--close">
+          <svg class="e-icon" height="38" width="38" viewBox="0 0 24 24">
+            <use xlink:href="/img/icons/gg-close.svg#icon-close"></use>
+          </svg>
+        </span>
+      </button>
+
+      <a href="/" class="site-header__logo">
+        <img src="img/logo_main.svg" alt="magwai logo" class="site-header_logo-img">
+      </a>
+
+    </div>
+
+    <nav class="site-header__navbar">
+
+      <ul class="site-header__menu">
+        <li class="site-header__menu-item">
+          <a href="#" class="site-header__menu-link c-btn c-btn--text-base">
+            УСЛУГИ
+          </a>
+        </li>
+        <li class="site-header__menu-item">
+          <a href="#" class="site-header__menu-link c-btn c-btn--text-base">
+            АБОНЕМЕНТЫ
+          </a>
+        </li>
+        <li class="site-header__menu-item">
+          <a href="#" class="site-header__menu-link c-btn c-btn--text-base">
+            ПОЧЕМУ МЫ
+          </a>
+        </li>
+        <li class="site-header__menu-item">
+          <a href="#" class="site-header__menu-link c-btn c-btn--text-base">
+            ОБОРУДОВАНИЕ
+          </a>
+        </li>
+        <li class="site-header__menu-item">
+          <a href="#" class="site-header__menu-link c-btn c-btn--text-base">
+            АКЦИИ
+          </a>
+        </li>
+        <li class="site-header__menu-item">
+          <a href="#" class="site-header__menu-link c-btn c-btn--text-base">
+            FAQ
+          </a>
+        </li>
+        <li class="site-header__menu-item">
+          <a href="#" class="site-header__menu-link c-btn c-btn--text-base">
+            КОНТАКТЫ
+          </a>
+        </li>
+      </ul>
+
+      <ul class="site-header__toolbar">
+        <li class="site-header__toolbar-item">
+          <a href="tel:+79123456789" class="site-header__toolbar-link c-btn c-btn--outline-base">
+            <span class="c-btn__icon">
+              <svg class="e-icon" height="32" width="32" viewBox="0 0 33 32">
+                <use xlink:href="/img/icons/carbon_phone-filled.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </a>
+        </li>
+        <li class="site-header__toolbar-item">
+          <button class="site-header__toolbar-btn c-btn c-btn--flat-accent modal-btn">
+            <span class="c-btn__label">
+              ОСТАВИТЬ ЗАЯВКУ
+            </span>
+          </button>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+
+  <div class="site-hero">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <!-- Slides -->
+      <div class="swiper-slide" data-slide-name="DOGIE COIN">
+        <img class="site-hero__slide-img" src="img/slide-1.jpg" alt="DOGIE COIN">
+        <div class="site-hero__body">
+          <div class="site-hero__slide-content u-container">
+            <h4 class="site-hero__slide-title">
+              Полет Илона Маска и DOGIE COIN
+            </h4>
+            <p class="site-hero__slide-text">
+              В прошлый четверг все офигели от полета DOGIE COIN на марс.
+            </p>
+            <button class="site-hero__slide-btn c-btn c-btn--flat-accent modal-btn">
+              <span class="c-btn__label">
+                ОСТАВИТЬ ЗАЯВКУ
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" data-slide-name="ПАДЕНИЕ">
+        <img class="site-hero__slide-img" src="img/slide-2.jpg" alt="ПАДЕНИЕ">
+        <div class="site-hero__body">
+          <div class="site-hero__slide-content u-container">
+            <h4 class="site-hero__slide-title">
+              DOGIE COIN УПАЛ
+            </h4>
+            <p class="site-hero__slide-text">
+              Все в шоке, я потерял все деньги
+            </p>
+            <button class="site-hero__slide-btn c-btn c-btn--flat-accent modal-btn">
+              <span class="c-btn__label">
+                ОСТАВИТЬ ЗАЯВКУ
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" data-slide-name="ВОЗВРАЩЕНИЕ">
+        <img class="site-hero__slide-img" src="img/slide-3.jpg" alt="ВОЗВРАЩЕНИЕ">
+        <div class="site-hero__body">
+          <div class="site-hero__slide-content u-container">
+            <h4 class="site-hero__slide-title">
+              Эпическое возвращения на хаи
+            </h4>
+            <p class="site-hero__slide-text">
+              Все в шоке, я снова богат
+            </p>
+            <button class="site-hero__slide-btn c-btn c-btn--flat-accent modal-btn">
+              <span class="c-btn__label">
+                ОСТАВИТЬ ЗАЯВКУ
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="site-hero__slide-pagination">
+      <div class="swiper-pagination u-container">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</header>
+<!--/.site-header-->
+
+
+    <main class="site-body">
+
+      <div class="site-content">
+        
+        <div class="site-content__section u-container">
+  <h2 class="site-content__title">
+    Карточки
+  </h2>
+  <div class="cards" id="cards">
+
+    <article class="cards-item" v-for="item in posts">
+  <div class="card__content">
+    <div class="card__picture">
+      <img v-bind:src="imageBaseUrl + item.id" alt="card image crypto-money" class="card__image">
+    </div>
+    <div class="card__body">
+      <span class="card__bage">
+        badge {{ item.id }}
+      </span>
+      <h3 class="card__title">
+        {{ item.title }}
+      </h3>
+      <p class="card__desc">
+        {{ item.body }}
+      </p>
+      <div class="card__meta">
+        <span class="card__meta-author">
+          Posted by <b>{{ item.userId }}</b>
+        </span>
+        <span class="card__meta-date">
+          on <b>{{ item.id }}.05.2021</b>
+        </span>
+
+      </div>
+      <button class="card__btn c-btn c-btn--flat-base">
+        Continue reading
+      </button>
+    </div>
+  </div>
+</article>
+
+    <div class="cards__control">
+      <button class="cards-btn c-btn c-btn--flat-accent" @click="getMoreCards(event)">
+        <span class="c-btn__label">
+          ЗАГРУЗИТЬ ЕЩЕ
+        </span>
+      </button>
+    </div>
+
+  </div>
+
+
+</div>
+
+      </div>
+      <!--/.site-content-->
+
+    </main>
+    <!--/.site-body-->
+
+
+    <!--OVERLAYS-->
+
+    <!--BURGER MENU CONTENT-->
+<div class="site__menu-content" id="menu-content">
+  <ul class="site__menu">
+    <li class="site__menu-item">
+      <a href="#" class="site__menu-link c-btn c-btn--text-base">
+        УСЛУГИ
+      </a>
+    </li>
+    <li class="site__menu-item">
+      <a href="#" class="site__menu-link c-btn c-btn--text-base">
+        АБОНЕМЕНТЫ
+      </a>
+    </li>
+    <li class="site__menu-item">
+      <a href="#" class="site__menu-link c-btn c-btn--text-base">
+        ПОЧЕМУ МЫ
+      </a>
+    </li>
+    <li class="site__menu-item">
+      <a href="#" class="site__menu-link c-btn c-btn--text-base">
+        ОБОРУДОВАНИЕ
+      </a>
+    </li>
+    <li class="site-header__menu-item">
+      <a href="#" class="site__menu-link c-btn c-btn--text-base">
+        АКЦИИ
+      </a>
+    </li>
+    <li class="site__menu-item">
+      <a href="#" class="site__menu-link c-btn c-btn--text-base">
+        FAQ
+      </a>
+    </li>
+    <li class="site__menu-item">
+      <a href="#" class="site__menu-link c-btn c-btn--text-base">
+        КОНТАКТЫ
+      </a>
+    </li>
+  </ul>
+
+  <div class="site__menu-toolbar">
+
+    <a href="tel:+79123456789" class="site__menu-btn c-btn c-btn--outline-base">
+      <span class="c-btn__icon">
+        <svg class="e-icon" height="32" width="32" viewBox="0 0 33 32">
+          <use xlink:href="/img/icons/carbon_phone-filled.svg#icon-phone"></use>
+        </svg>
+      </span>
+    </a>
+
+    <button class="site__menu-btn c-btn c-btn--flat-accent modal-btn">
+      <span class="c-btn__label">
+        ОСТАВИТЬ ЗАЯВКУ
+      </span>
+    </button>
+  </div>
+
+</div>
+    
+    <div class="modal modal--submit">
+  <div class="modal__content">
+
+    <div class="modal__decor">
+      <img src="img/moon.png" alt="moon" class="modal__image">
+    </div>
+
+    <div class="modal__body">
+      <h2 class="modal__title">
+        Оставьте заявку
+      </h2>
+      <p class="modal__subtitle">
+        Оставьте заявку и наш менеджер свяжется с вами в течение 10 -15 минут
+      </p>
+      <form action="" class="modal__form">
+
+        <div class="modal__form-item">
+            <input type="text" class="modal__form-input" id="submit-name" name="submit_name" placeholder="&nbsp;"
+              required minlength="2" pattern="[A-Za-zА-Яа-яЁё]{2,}">
+            <label for="submit-name" class="modal__form-label">
+              Ваше имя*
+            </label>
+        </div>
+
+        <div class="modal__form-item">
+            <input type="email" class="modal__form-input" id="submit-email" name="submit_email" placeholder="&nbsp;"
+              required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <label for="submit-email" class="modal__form-label">
+              E-Mail*
+            </label>
+        </div>
+
+        <div class="modal__form-item">
+            <input type="tel" class="modal__form-input" id="submit-phone" data-tel-input name="submit_phone" placeholder="&nbsp;" maxlength="18">
+            <label for="submit-phone" class="modal__form-label">
+              +7(___)
+            </label>
+        </div>
+
+        <div class="modal__form-item modal__form-item--textarea">
+            <textarea class="modal__form-input modal__form-input--textarea" id="submit-message" name="submit_message" required value="" placeholder="&nbsp;" minlength="2"></textarea>
+            <label for="submit-message" class="modal__form-label modal__form-label--textarea">
+              Ваш вопрос*
+            </label>
+        </div>
+
+        <div class="modal__form-submit">
+          <button class="modal__form-submit-btn c-btn c-btn--flat-accent">
+            <span class="c-btn__label">
+              ОТПРАВИТЬ ЗАЯВКУ
+            </span>
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <button class="close-modal c-btn c-btn--outline-base">
+      <span class="c-btn__icon">
+        <svg class="e-icon" height="24" width="24" viewBox="0 0 33 32">
+          <use xlink:href="/img/icons/ant-design_close-outlined.svg#icon-modal-close">
+          </use>
+        </svg>
+      </span>
+    </button>
+
+  </div>
+</div>
+    
+    <div class="site-overlay" id="site-overlay"></div>
+
+    <!--/OVERLAYS-->
+
+  </div>
+  <!--/.site-->
+
+  <!--SCRIPTS-->
+  <script async src="js/app.js"></script>
+  <script async src="js/main.js"></script>
+  <!--/SCRIPTS-->
+
+</body>
+
+</html>
+
+<!--
+ICONS reuse
+
+<svg class="e-icon" height="20" width="20" viewBox="0 0 48 48">
+  <use xlink:href="/img/icons/icon-file-name.svg#icon-id"></use>
+</svg>
+
+-->
